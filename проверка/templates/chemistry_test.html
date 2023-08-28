@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Химия</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
+</head>
+<body>
+    <p><h1 class="center">1.Какой 5-ый по счёту элемент в таблице Менделеева?</h1></p>
+    <form method="POST" action="/chemistry_test2.html">
+        <p><h1><input type="radio" name="answer1_с" value="yes">B</h1>
+        <h1><input type="radio" name="answer1_с" value="no">He</h1></p>
+        <p><h1><input type="radio" name="answer1_с" value="no">O</h1>
+        <h1><input type="radio" name="answer1_с" value="no">N</h1></p>
+        <p><h1><input type="submit" value="Ответить"></h1></p>
+    </form>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Математика</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
+</head>
+<body class="yellow">
+    {% if result == "yes" %}
+    <p><h1>Правильно</h1></p>
+    {% else %}
+    <p><h1>Не правильно</h1></p>
+    {% endif %}
+    <p><h1>Спасибо, что зашёл на мой сайт.</h1></p>
+    <p><h1>Можешь написать своё имя</h1></p>
+    <p><h1>Впиши своё имя в текстовое поле:</h1></p>
+    <p><form method="POST" action="/result">
+        <input type="text" name="name">
+        <input type="submit" value="Завершить">
+    </form></p>
+</body>
+</html>

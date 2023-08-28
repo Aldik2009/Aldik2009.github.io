@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Проверка знаний</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
+</head>
+<body>
+    <p><h1 class="center">Привет, это главная страница.</h1></p>
+    <p><h2 class="center">Здесь, ты можешь проверить свои знания.
+         Переходи на отдельные странички с тестами, нажав на соответствующие кнопки.</h2></p>
+    <div>
+        <a href="/math_test.html"><button class="button1">Математика</button></a>
+        <a href="/chemistry_test.html"><button class="button2">Химия</button></a>
+    </div>
+</body>
+</html>

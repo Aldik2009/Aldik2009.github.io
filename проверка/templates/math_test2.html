@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Математика</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
+</head>
+<body>
+    {% if result == "yes" %}
+    <p><h1>Правильно</h1></p>
+    {% else %}
+    <p><h1>Не правильно</h1></p>
+    {% endif %}
+    <p><h1>Сколько будет 12*14?</h1></p>
+    <form method="POST" action="/math_test3.html">
+        <p><h1><input type="radio" name="answer2_m" value="no">98</h1>
+        <h1><input type="radio" name="answer2_m" value="no">140</h1></p>
+        <p><h1><input type="radio" name="answer2_m" value="no">156</h1>
+        <h1><input type="radio" name="answer2_m" value="yes">168</h1></p>
+        <p><h1><input type="submit" value="Ответить"></h1></p>
+    </form>
+</body>
+</html>
